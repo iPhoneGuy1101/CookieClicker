@@ -8,6 +8,6 @@ var shop = [
 	{name: "Prism",                 img: "prism.png",        cost: 100000,      cps: 1234            },
 	{name: "Cookie Converter",      img: "converter.png",    cost: 1000000,     cps: 12345           },
 	{name: "Portal to Cookiverse",  img: "cookieverse.png",  cost: 11011101,    cps: 110101          },
-	{name: "Cookie Fireworks",      img: "fireworks.png",    cost: 123456789,   cps: 1234567         },
+	{name: "Cookie Fireworks",      img: "fireworks.png",    cost: 123456789,   cps: 1234567         },
 	{name: "SuperCursor!",          img: "supercursor.png",  cost: 1000000000,  cps: 0,        cpc: 3}
 ];
