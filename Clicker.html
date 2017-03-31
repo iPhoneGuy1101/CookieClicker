@@ -30,8 +30,8 @@
 		<h3 onclick='Reset();'>Reset Data</h3>
 		<h3 onclick='ExportData()'>Export</h3>
 		<h3 onclick='ImportData()'>Import</h3>
-		<h3 style='color:#09F'>V1.3.7</h3>
 	</div>
+	<script src='shop.js'></script>
 	<script>
 	/*W3Schools Code*/
 	function setCookie(cname, cvalue, exdays) {
@@ -150,23 +150,11 @@
 		setTimeout(Update);
 	};
 	var cookie = null, then = 0;
-	var shop = [
-		{name: "<img src='images/cursor.png' style='width:64px;height:32px;'></img> Cursor", cost: 15, cps: 0.1},
-		{name: "<img src='images/grandma.png' style='width:64px;height:32px;'></img> Grandma", cost: 100, cps: 1},
-		{name: "<img src='images/tree.png' style='width:64px;height:32px;'></img> Cookie Tree",cost: 300, cps: 3},
-		{name: "<img src='images/farm.png' style='width:64px;height:32px;'></img> Farm", cost: 450, cps: 5},
-		{name: "<img src='images/mine.png' style='width:64px;height:32px;'></img> Mine", cost: 1000, cps: 10},
-		{name: "<img src='images/planet.png' style='width:64px;height:32px;'></img> Cookie Planet", cost: 10000, cps: 111},
-		{name: "<img src='images/prism.png' style='width:64px;height:32px;'></img> Prism", cost: 100000, cps: 1234},
-		{name: "<img src='images/converter.png' style='width:64px;height:32px;'></img> Cookie Converter", cost: 1000000, cps: 12345},
-		{name: "<img src='images/cookieverse.png' style='width:64px;height:32px;'></img> Portal to Cookiverse", cost: 11011101, cps:110101},
-		{name: "<img src='images/fireworks.png' style='width:64px;height:32px;'></img> Cookie Fireworks", cost: 123456789, cps: 1234567},
-		{name: "<img src='images/supercursor.png' style='width:64px;height:32px;'></img> SuperCursor!", cost: 1000000000, cps: 0, cpc: 3}
-	];
+
 	var sid = document.getElementById('shop');
 	for(var a = 0; a<shop.length; a++){
 		s = shop[a];
-		sid.innerHTML+="<h1 onclick='Buy("+s.cps+","+s.cost+", "+s.cpc+")'>"+s.name+" ("+s.cost+"C"+(s.cpc?", "+(s.cpc+"CPC)"):", "+(s.cps+"CPS)"))+"</h2>"
+		sid.innerHTML+="<h1 onclick='Buy("+s.cps+","+s.cost+", "+s.cpc+")'>"+"<img style='width:32px;height:32px' src='images/"+s.img+"'></img>"+s.name+" ("+s.cost+"C"+(s.cpc?", "+(s.cpc+"CPC)"):", "+(s.cps+"CPS)"))+"</h2>"
 	}
 	function Buy(a,b,c){
 		cookie.buy(a,b,c);
