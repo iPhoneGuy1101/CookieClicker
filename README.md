@@ -2,7 +2,7 @@
 
 UPDATED COOKIE CLICKER!!!
 
-# --Now the below features are (close enough too) perfected!
+# --Now the below features are (close enough to) perfected!
 1. Clickable Cookie (lol day 1)
 2. Shop stored in JSON Object
 3. document.cookie (Save Data) working 99% of the time
