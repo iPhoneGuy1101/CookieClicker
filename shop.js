@@ -9,5 +9,9 @@ var shop = [
 	{name: "Cookie Converter",      img: "converter.png",    cost: 1000000,     cps: 12345           },
 	{name: "Portal to Cookiverse",  img: "cookieverse.png",  cost: 11011101,    cps: 110101          },
 	{name: "Cookie Fireworks",      img: "fireworks.png",    cost: 123456789,   cps: 1234567         },
-	{name: "SuperCursor!",          img: "supercursor.png",  cost: 1000000000,  cps: 0,        cpc: 3}
+	{name: "SuperCursor!",          img: "supercursor.png",  cost: 1000000000,  cps: 0,        cpc: 9},
+	{name: "SuperCursor!",          img: "supercursor.png",  cost: 10000000000,  cps: 0,        cpc: 20},
+	{name: "SuperCursor!",          img: "supercursor.png",  cost: 15000000000,  cps: 0,        cpc: 30},
+	{name: "SuperCursor!",          img: "supercursor.png",  cost: 20000000000,  cps: 0,        cpc: 45},
+	{name: "SuperCursor!",          img: "supercursor.png",  cost: 35000000000,  cps: 0,        cpc: 100}
 ];
